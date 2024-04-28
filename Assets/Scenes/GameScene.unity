@@ -2478,7 +2478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1446857462}
         m_TargetAssemblyTypeName: InGameUI, Assembly-CSharp
-        m_MethodName: EasyMode
+        m_MethodName: Restart2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16906,12 +16906,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.274455
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.274455
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.274455
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.717285
+      value: 94.93
       objectReference: {fileID: 0}
     - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.97
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18257,7 +18269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click it if you NOOB~~
+  m_text: P to Pause game and click it if you NOOB~~
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20169,6 +20181,7 @@ MonoBehaviour:
   deadPanel: {fileID: 1288454784}
   pausePanel: {fileID: 1132701061}
   spikedBall: {fileID: 736977698188328414, guid: c46a16963f130bb4fa6d4fbeee555606, type: 3}
+  player: {fileID: 0}
 --- !u!4 &1447393195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7358103890283669423, guid: ed4052d5637062f4dbd63af031175ee8, type: 3}

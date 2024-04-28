@@ -15,6 +15,8 @@ public class InGameUI : MonoBehaviour
 
     [SerializeField] private GameObject spikedBall;
     
+    [SerializeField] private GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,7 @@ public class InGameUI : MonoBehaviour
     
     void PauseGame()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Time.timeScale = 0;
             pausePanel.SetActive(true);
@@ -54,6 +56,16 @@ public class InGameUI : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("GameScene");
+    }
+    
+    public void Restart2()
+    {
+        //player.gameObject.transform.position = new Vector3(-11.75f, 0, 0);
+        Time.timeScale = 1;
+        deadPanel.SetActive(false);
+        healthText.gameObject.SetActive(true);
+        
+        Debug.Log("Restart2");
     }
     
     public void ReturnToMainMenu()
