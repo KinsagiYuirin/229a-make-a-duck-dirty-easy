@@ -6,6 +6,7 @@ using UnityEngine;
 public class Trap : MonoBehaviour
 {
     [SerializeField] private int damage = 1;
+    
     [SerializeField] private GameObject player;
     
     void Awake()
