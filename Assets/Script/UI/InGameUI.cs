@@ -12,10 +12,13 @@ public class InGameUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private GameObject deadPanel;
     [SerializeField] private GameObject pausePanel;
+
+    [SerializeField] private GameObject spikedBall;
     
     // Start is called before the first frame update
     void Start()
     {
+        spikedBall.SetActive(true);
         instance = this;
     }
 
@@ -61,11 +64,13 @@ public class InGameUI : MonoBehaviour
     public void HardMode()
     {
         Player.instance.Health = 1;
+        spikedBall.SetActive(true);
     }
     
     public void EasyMode()
     {
         Player.instance.Health = 10;
+        spikedBall.SetActive(false);
     }
     
     public void Resume()

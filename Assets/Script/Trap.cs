@@ -11,7 +11,7 @@ public class Trap : MonoBehaviour
     
     void Awake()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -21,6 +21,14 @@ public class Trap : MonoBehaviour
     }
     
     private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            player.gameObject.GetComponent<Player>().Health -= damage;
+        }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
